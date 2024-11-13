@@ -1,0 +1,51 @@
+{
+  "name": "lyw-vue-cli",
+  "version": "1.0.1",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/x6-flow/",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@antv/x6": "^1.18.0",
+    "element-plus": "^1.0.2-beta.44",
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.2",
+    "@vue/compiler-sfc": "^3.0.5",
+    "sass": "^1.32.13",
+    "vite": "^2.2.3",
+    "vite-plugin-style-import": "^0.10.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "vue/no-parsing-error": [
+        2,
+        {
+          "x-invalid-end-tag": false
+        }
+      ]
+    }
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-standard"
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
